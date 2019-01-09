@@ -97,7 +97,7 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
   <img height=380 alt="userProfile" src="./screenshots/galleryNew.png">
 </p>
 
-### Users
+## Users
 
 #### Login
 
