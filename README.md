@@ -38,6 +38,21 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
 - We decided to use Trello Technology to assign tasks and track progress.
 - Daily morning stand up and git version control methods were used.
 
+## Technologies Used
+| Category | List |
+| ---- | --- |
+| Languages                            | Javascript (ECMAScript6), CSS3, Sass, HTML5 |
+| Front-end Web Application Framework  | AngularJS |
+| Server Environment                   | Node.js with Express.js |
+| CSS Framework                        | Bulma |
+| Third-party APIs                     | OpenStreetMap with Leaflet |
+| Project Collaboration Tool           | Trello, Slack |
+| REST client                          | Insomnia |
+| Typefaces                            | Google Fonts |
+| Text Editor                          | Atom |
+| Browser                              | Chrome |
+| Version control | Git and GitHub
+
 
 ## Visuals
 
@@ -112,6 +127,33 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
   <img height=380 alt="userProfile" src="./screenshots/profile.png">
 </p>
 
+
+## Featured Piece of Code
+
+As a whole, one of the biggest challenges for me during this project was incorporating a map API and making it interactive. I wanted to make it so that you could click on an exhibition/galley name and it would take you to the location on the map. I came across difficulties when trying to interact with the map with Angular, and decided to use DOM manipulation to resolve these issues. Among other things, the function below uses DOM manipulation to create a pop-up for the selected gallery/exhibition. It then runs a callback function which allows Angular to redirect to the relative page with its usual $state.go.
+
+```[javascript]
+  $scope.panMap = function(gallery) {
+    const lat = gallery.latlgn.lat;
+    const lgn = gallery.latlgn.lgn;
+    mapLib.panTo([lat, lgn]);
+    mapLib.clearMarkers();
+    console.log('this is....', [lat, lgn]);
+    const myDiv = document.createElement('div');
+    myDiv.innerHTML = `${gallery.name}🏛`;
+    myDiv.addEventListener('click', () => galleryPopUpClick(gallery));
+    mapLib.addMarker([lat, lgn], myDiv);
+};
+```
+###### callback function
+
+```[javascript]
+function galleryPopUpClick(gallery){
+  $state.go('galleryShow', { id: gallery._id});
+}
+```
+
+
 ## Project Log
 
 | Time | Action |
@@ -120,22 +162,6 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
 | Sunday, Monday, Tuesday ( **3 days**)| Server side work. Initial front end set up. |
 | Tuesday, Wednesday (**1.5 days**) | Client side work. Style / Scss. |
 | Monday, Thursday (**1.5 days**) | Extra features, Bug fixing, Testing, Git, Deployment |
-
-
-## Technologies Used
-| Category | List |
-| ---- | --- |
-| Languages                            | Javascript (ECMAScript6), CSS3, Sass, HTML5 |
-| Front-end Web Application Framework  | AngularJS |
-| Server Environment                   | Node.js with Express.js |
-| CSS Framework                        | Bulma |
-| Third-party APIs                     | OpenStreetMap with Leaflet |
-| Project Collaboration Tool           | Trello, Slack |
-| REST client                          | Insomnia |
-| Typefaces                            | Google Fonts |
-| Text Editor                          | Atom |
-| Browser                              | Chrome |
-| Version control | Git and GitHub
 
 ## License
 
