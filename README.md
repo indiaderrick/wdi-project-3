@@ -6,7 +6,7 @@ Project 3 out of 4 during my Web Development Immersive course at General Assembl
 [View xhibit on Heroku](https://xhibit.herokuapp.com/#!/)
 
 **Note**
-- Due to time limitations, we did not plan to make this mobile responsive. For best experience view on the laptop/computer.
+- Due to time limitations, we did not plan to make this mobile responsive. For best experience view on a laptop/computer.
 
 ***
 
