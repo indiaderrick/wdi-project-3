@@ -24,7 +24,7 @@ The course instructors had partnered students with other classmates to design an
 > **Client side**
 * Use AngularJS
 * Use SCSS
-* Use Webpack & Yarn** to manage your dependencies and compile your source code
+* Use Webpack & Yarn to manage your dependencies and compile your source code
 
 ## Concept
 
@@ -58,7 +58,7 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
 ### Home
 ![image width="150"](./screenshots/home.gif)
 
-### Exhibitions
+## Exhibitions
 
 #### Index
 
@@ -78,7 +78,7 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
   <img height=380 alt="userProfile" src="./screenshots/exhibitionNew.png">
 </p>
 
-### Galleries
+## Galleries
 
 #### Index
 
