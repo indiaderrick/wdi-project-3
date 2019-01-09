@@ -1,7 +1,8 @@
 # xhibit
 
 #### Duration: 1 week
-Project 3 out of 4 during my Web Development Immersive course at General Assembly.
+
+>Project 3 out of 4 during my Web Development Immersive course at General Assembly.
 
 [View xhibit on Heroku](https://xhibit.herokuapp.com/#!/)
 
