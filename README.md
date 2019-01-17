@@ -5,6 +5,7 @@
 >Project 3 out of 4 during my Web Development Immersive course at General Assembly.
 
 [View xhibit on Heroku](https://xhibit.herokuapp.com/#!/)
+[View xhibit on [GitHub Repo](https://github.com/indiaderrick/wdi-project-three)
 
 **Note**
 - Due to time limitations, we did not plan to make this mobile responsive. For best experience view on a laptop/computer.
@@ -162,6 +163,19 @@ function galleryPopUpClick(gallery){
 | Sunday, Monday, Tuesday ( **3 days**)| Server side work. Initial front end set up. |
 | Tuesday, Wednesday (**1.5 days**) | Client side work. Style / Scss. |
 | Monday, Thursday (**1.5 days**) | Extra features, Bug fixing, Testing, Git, Deployment |
+
+At the start, each team member was assigned a model to create and do all of the backend routes for. I was in charge of the Exhibition model which itself referenced the gallery model. When the initial setups were done, the members were free to handle more tasks based on the project management plan on Trello. Although we made sure to update and keep track of this, daily meetings were held to discuss our progress.
+
+### Our Trello
+
+![image width="150"](./screenshots/trello.gif)
+
+## Future Features
+
+  * Include different types of authentication - authorised exhibition reviewer and a regular user.
+  * Fix flash message weirdness on Login.
+  * Make mobile responsive.
+  * Make it so that any authorised user can rate an exhibition. At the moment the rating is set by whoever uploads the exhibition review.
 
 ## License
 
