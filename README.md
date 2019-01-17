@@ -131,7 +131,7 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
 
 ## Featured Piece of Code
 
-As a whole, one of the biggest challenges for me during this project was incorporating a map API and making it interactive. I wanted to make it so that you could click on an exhibition/galley name it would not only take you to the location on the map, but you could click on the pop-up and be redirected to the relevant page. I came across difficulties when trying to interact with the map with Angular, and decided to use DOM manipulation to resolve these issues. Among other things, the function below uses DOM manipulation to create a pop-up for the selected gallery/exhibition. It then runs a callback function which allows Angular to redirect to the relative page with its usual $state.go.
+As a whole, one of the biggest challenges for me during this project was incorporating a map API and making it interactive. I wanted to make it so that you could click on an exhibition/galley name it would not only take you to the location on the map, but you could click on the pop-up and be redirected to the relevant page. I came across difficulties when trying to interact with the map with Angular, and decided to use DOM manipulation to resolve these issues. Among other things, the function below uses DOM manipulation to create a pop-up for the selected gallery/exhibition. On click, it then runs a callback function which allows Angular to redirect to the relative page with its usual $state.go.
 
 ```[javascript]
   $scope.panMap = function(gallery) {
