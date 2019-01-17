@@ -5,7 +5,8 @@
 >Project 3 out of 4 during my Web Development Immersive course at General Assembly.
 
 [View xhibit on Heroku](https://xhibit.herokuapp.com/#!/)
-[View xhibit on [GitHub Repo](https://github.com/indiaderrick/wdi-project-three)
+
+[View xhibit on GitHub Repo](https://github.com/indiaderrick/wdi-project-three)
 
 **Note**
 - Due to time limitations, we did not plan to make this mobile responsive. For best experience view on a laptop/computer.
@@ -128,6 +129,20 @@ With only 7 days to fulfil the brief and incorporate our ideas, we made sure we 
   <img height=380 alt="userProfile" src="./screenshots/profile.png">
 </p>
 
+## Project Log
+
+| Time | Action |
+| ---- |:------:|
+| Thursday ( **half day** ) | Project concept, code planning, wireframe |
+| Sunday, Monday, Tuesday ( **3 days**)| Server side work. Initial front end set up. |
+| Tuesday, Wednesday (**1.5 days**) | Client side work. Style / Scss. |
+| Monday, Thursday (**1.5 days**) | Extra features, Bug fixing, Testing, Git, Deployment |
+
+At the start, each team member was assigned a model to create and do all of the backend routes for. I was in charge of the Exhibition model which itself referenced the gallery model. When the initial setups were done, the members were free to handle more tasks based on the project management plan on Trello. Although we made sure to update and keep track of this, daily meetings were held to discuss our progress.
+
+### Our Trello
+
+![image width="150"](./screenshots/trello.gif)
 
 ## Featured Piece of Code
 
@@ -153,22 +168,6 @@ function galleryPopUpClick(gallery){
   $state.go('galleryShow', { id: gallery._id});
 }
 ```
-
-
-## Project Log
-
-| Time | Action |
-| ---- |:------:|
-| Thursday ( **half day** ) | Project concept, code planning, wireframe |
-| Sunday, Monday, Tuesday ( **3 days**)| Server side work. Initial front end set up. |
-| Tuesday, Wednesday (**1.5 days**) | Client side work. Style / Scss. |
-| Monday, Thursday (**1.5 days**) | Extra features, Bug fixing, Testing, Git, Deployment |
-
-At the start, each team member was assigned a model to create and do all of the backend routes for. I was in charge of the Exhibition model which itself referenced the gallery model. When the initial setups were done, the members were free to handle more tasks based on the project management plan on Trello. Although we made sure to update and keep track of this, daily meetings were held to discuss our progress.
-
-### Our Trello
-
-![image width="150"](./screenshots/trello.gif)
 
 ## Future Features
 
